@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  webapp:
+    build: .
+    container_name: lastName_firstName_coding_assignment11
+    ports:
+      - "7775:7775"
+    working_dir: /lastName_firstName_site
+    restart: unless-stopped
